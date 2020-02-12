@@ -42,4 +42,4 @@ void times_table(void)
 		filas++;
 		_putchar('\n');
 	}
-}}
+}
