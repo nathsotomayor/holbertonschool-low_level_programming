@@ -4,6 +4,7 @@
  * mul - multiplies two integers
  * @a: first integer.
  * @a: second integer.
+ * @i: int.
  * Return: i.
  */
 
