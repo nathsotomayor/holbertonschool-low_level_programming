@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * main - Print text without printf and puts to stderr
- * @write
+ * main - Print text to stderr
+ *
  * Return: 1
  */
 int main(void)
