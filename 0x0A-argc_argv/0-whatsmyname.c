@@ -4,11 +4,11 @@
  * main -Prints name of program
  * @argc: Number of command line arguments
  * @argv: Array containing the program command line arguments
- * @i: Iterator
+ * @i
  * Return: 0 Always success
  */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	int i;
 
