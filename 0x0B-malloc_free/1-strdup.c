@@ -10,14 +10,14 @@
 
 int _strlen(char *s)
 {
-        int x;
+	int x;
 
-        for (x = 0; s[x] != '\0'; )
-        {
-                x++;
-        }
+	for (x = 0; s[x] != '\0'; )
+	{
+		x++;
+	}
 
-        return (x);
+	return (x);
 }
 
 /**
@@ -33,14 +33,14 @@ char *_strdup(char *str)
 
 	size = _strlen(str);
 
-	str2 = malloc(size * sizeof(char));
+	str2 = malloc(size + 1 * sizeof(char));
 
 	if (str == NULL)
 		return (NULL);
 	if (!str2)
 		return (NULL);
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i <= size; i++)
 	{
 		str2[i] = str[i];
 	}
