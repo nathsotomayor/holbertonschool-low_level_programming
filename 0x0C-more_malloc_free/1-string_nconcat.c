@@ -55,7 +55,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		for (size2 = 0; size2 <= l2; size2++)
 		{
-			sentence[size1 + size2] = s1[size2];
+			sentence[size1 + size2] = s2[size2];
 		}
 	}
 	else
