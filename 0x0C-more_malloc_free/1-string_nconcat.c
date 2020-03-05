@@ -59,5 +59,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sentence[size1 + size2] = s2[size2];
 	}
 
+	sentence[size1 + size2] = '\0';
+
 	return (sentence);
 }
