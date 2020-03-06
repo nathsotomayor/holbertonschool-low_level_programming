@@ -22,10 +22,11 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 }
 
 /**
- * *_calloc - Allocates memory for an array using 'maloc'
- * @nmemb: Numbers of elements
- * @size: Size of data type
- * Return: Pointer to allocated memory
+ * *_realloc - Rellocates memory using 'maloc' and 'free'
+ * @ptr: Pointer to the memory previously allocated
+ * @old_size: Old size of ptr
+ * @new_size: New size of the new memory block
+ * Return: Pointer to reallocated memory
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
