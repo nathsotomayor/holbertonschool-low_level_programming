@@ -1,4 +1,4 @@
 #ifndef _SIZE_
-#define SIZE (1024)
+#define _SIZE_ (1024)
 
 #endif
