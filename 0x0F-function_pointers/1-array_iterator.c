@@ -3,7 +3,8 @@
 /**
  * array_iterator - Executes a function given as a parameter
  * @array: Pointer to string
- * @f: Pointer to function
+ * @size: Size of the array
+ * @action: Pointer to function
  * Return: Nothing
  */
 
