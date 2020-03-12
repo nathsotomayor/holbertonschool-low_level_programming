@@ -2,7 +2,6 @@
 
 /**
  * *get_op_func - Selects the function to perform operation
- * @get_op_func: Pointer to function I need tu use
  * @s: Operator
  * Return: Name of function
  */
