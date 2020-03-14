@@ -3,6 +3,7 @@
 /**
  * sum_them_all - Sum all its parameters
  * @n: Constant parameter
+ *
  * Return: Result of sum
  */
 
@@ -21,6 +22,7 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum += va_arg(lts, int);
 	}
+
 	va_end(lts);
 
 	return (sum);
