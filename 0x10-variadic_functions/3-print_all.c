@@ -35,10 +35,12 @@ void f_string(va_list lst)
 {
 	char * str;
 
+	str = va_arg(lst, char *);
+
 	if (str == NULL)
 		printf("(nil)");
-
-	printf("%s", va_arg(lst, char *));
+	else
+		printf("%s", str);
 }
 
 /**
