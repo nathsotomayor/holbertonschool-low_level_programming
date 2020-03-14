@@ -7,9 +7,9 @@
 #include <string.h>
 
 /**
- * struct type_fmt - Struct formats
+ * struct type_fmt - struct formats
  *
- * @type: Formats
+ * @type: formats
  * @f: The function associated
  */
 typedef struct type_fmt
