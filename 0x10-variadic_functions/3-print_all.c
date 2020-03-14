@@ -33,7 +33,7 @@ void f_float(va_list lst)
  */
 void f_string(va_list lst)
 {
-	char * str;
+	char *str;
 
 	str = va_arg(lst, char *);
 
