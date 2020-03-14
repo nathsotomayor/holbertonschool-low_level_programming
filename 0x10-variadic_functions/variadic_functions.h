@@ -14,8 +14,8 @@
  */
 typedef struct type_fmt
 {
-    char *type;
-    void (*f)(va_list);
+	char *type;
+	void (*f)(va_list);
 } t_fmt;
 
 int _putchar(char c);
