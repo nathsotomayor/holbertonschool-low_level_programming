@@ -20,12 +20,12 @@ list_t *add_node_end(list_t **head, const char *str)
 		len_new++;
 	}
 
+	new->str = strdup(str);
+	new->len = length;
+	new->next = NULL;
+
 	if (new != NULL)
 	{
-		new->str = strdup(str);
-		new->len = length;
-		new->next = NULL;
-
 		while (tmp->next != NULL)
 		{
 			tmp = tmp->next;
