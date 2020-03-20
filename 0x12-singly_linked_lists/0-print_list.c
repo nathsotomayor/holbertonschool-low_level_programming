@@ -9,12 +9,9 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t n;
+	size_t n = 0;
 
-	if (h == NULL)
-		return (0);
-
-	for (n = 0; h != '\0'; n++)
+	for (n = 0; h != NULL; n++)
 	{
 		if (h->str == NULL)
 		{
