@@ -29,6 +29,8 @@ unsigned int binary_to_uint(const char *b)
 
 	for (len = 0; b[len] != '\0'; len++)
 	{
+		if (b[i] != '1' && b[i] != '0')
+			return (0);
 	}
 
 	if (b == NULL)
@@ -36,9 +38,6 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		if (b[i] != '1' && b[i] != '0')
-			return (0);
-
 		if (b[i] == '1')
 		{
 			res = res + _pow(2, pos_pot);
