@@ -7,12 +7,16 @@
  * Return: int
  */
 
-unsigned int _pow(int x, int y)
+unsigned int _pow(int base, unsigned int power)
 {
-	if (y > 0)
-		return (x * _pow(x, y - 1));
-	else
-		return (1);
+	unsigned int result = 1, i;
+
+	for (i = 0; i < power; i++)
+	{
+		result = result * base;
+	}
+
+	return (result);
 }
 
 /**
@@ -33,7 +37,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 	}
 
-	if (b == NULL)
+	if (b == '\0')
 		return (0);
 
 	i = len - 1;
