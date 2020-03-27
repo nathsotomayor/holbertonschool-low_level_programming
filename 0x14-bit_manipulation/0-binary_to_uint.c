@@ -1,22 +1,23 @@
 #include "holberton.h"
 
 /**
- * _pow - Returns the value of x raised to the power of y_
+ * _pow - Returns the value of x raised to the y of power
  * @x: Base number
  * @y: Exponent
+ *
  * Return: int
  */
 
-unsigned int _pow(int base, unsigned int power)
+unsigned int _pow(int x, unsigned int y)
 {
-	unsigned int result = 1, i;
+	unsigned int res = 1, i;
 
-	for (i = 0; i < power; i++)
+	for (i = 0; i < y; i++)
 	{
-		result = result * base;
+		res = res * x;
 	}
 
-	return (result);
+	return (res);
 }
 
 /**
@@ -28,13 +29,14 @@ unsigned int _pow(int base, unsigned int power)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int res = 0, len;
+	unsigned int res = 0, len = 0;
 	int i;
 
-	for (len = 0; b[len] != '\0'; len++)
+	while (b[len] != '\0')
 	{
 		if (b[len] != '1' && b[len] != '0')
 			return (0);
+		len++;
 	}
 
 	if (b == '\0')
