@@ -24,8 +24,8 @@ unsigned int _pow(int x, int y)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int res = 0, len = 0;
-	int i, pos_pot = 0;
+	unsigned int res = 0, len;
+	int i;
 
 	for (len = 0; b[len] != '\0'; len++)
 	{
@@ -34,15 +34,17 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 		return (0);
 
-	for (i = len - 1; i >= 0; --i)
+	i = len - 1;
+	len = 0;
+	for (; i >= 0; --i)
 	{
 		if (b[i] != '1' && b[i] != '0')
 			return (0);
 		if (b[i] == '1')
 		{
-			res = res + _pow(2, pos_pot);
+			res = res + _pow(2, len);
 		}
-		pos_pot++;
+		len++;
 	}
 	return (res);
 }
