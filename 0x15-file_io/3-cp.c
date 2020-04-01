@@ -6,7 +6,7 @@
  *
  * Return: 1 on success and -1 on failure
  */
-int main(int ac, char**av)
+int main(int ac, char *av[])
 {
 	int fo_from, fo_to, rf = 0, wf;
 	char buf[1024];
@@ -19,7 +19,7 @@ int main(int ac, char**av)
 	if (fo_from == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 
-	fo_to = open(av[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
+	fo_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	if (fo_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[2]), exit(99);
