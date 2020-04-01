@@ -22,13 +22,14 @@ int main(int ac, char *av[])
 	fo_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	if (fo_to == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
 	rf = 1024;
 	while (rf == 1024)
 	{
 		rf = read(fo_from, buf, 1024);
 		wf = write(fo_to, buf, rf);
 	}
+
 	if (rf == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	if (wf == -1)
@@ -38,5 +39,4 @@ int main(int ac, char *av[])
 	if (close(fo_to) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fo_to), exit(100);
 	return (0);
-
 }
