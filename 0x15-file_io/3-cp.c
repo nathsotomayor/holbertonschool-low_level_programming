@@ -8,7 +8,7 @@
  */
 int main(int ac, char**av)
 {
-	int fo_from, fo_to, rf, wf;
+	int fo_from, fo_to, rf = 0, wf;
 	char buf[1024];
 
 	if (ac != 3)
