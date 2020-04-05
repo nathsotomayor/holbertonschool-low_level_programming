@@ -1,3 +1,3 @@
 # C Low Level Programming
 
-Learning low level programming with C Programming Language
+Learning low level algorithms with C Programming Language
