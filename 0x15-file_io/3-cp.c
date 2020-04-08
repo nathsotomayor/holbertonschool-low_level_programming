@@ -22,7 +22,7 @@ int main(int ac, char *av[])
 	fo_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	if (fo_to == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 
 	rf = 1024;
 
