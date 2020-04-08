@@ -23,7 +23,9 @@ int main(int ac, char *av[])
 
 	if (fo_to == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av[2]), exit(99);
+
 	rf = 1024;
+
 	while (rf == 1024)
 	{
 		rf = read(fo_from, buf, 1024);
