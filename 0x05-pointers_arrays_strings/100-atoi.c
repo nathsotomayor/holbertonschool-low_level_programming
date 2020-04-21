@@ -16,5 +16,8 @@ int _atoi(char *s)
 		convert = convert * 10 + s[i] - '0';
 	}
 
+	if (*s == '\0')
+		return (0);
+
 	return (convert);
 }
