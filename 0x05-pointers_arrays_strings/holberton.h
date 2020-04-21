@@ -10,6 +10,6 @@ int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
 void puts2(char *str);
-int _atoi(char *arr)
+int _atoi(char *s);
 
 #endif
