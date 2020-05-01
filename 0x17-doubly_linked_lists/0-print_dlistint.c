@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_dlistint - prints all elements of a list.
+ * @h: pointer to head element of list
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: The numbers of nodes
  */
 
 size_t print_dlistint(const dlistint_t *h)
